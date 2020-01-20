@@ -1,0 +1,41 @@
+=========================================================================
+使用：
+http://172.16.10.62:888/demo/user/getMsg
+参数：
+fileName=hello.json
+
+get,post都支持
+fileName就是json文件名称；
+
+可以把自定义的json文件存放到demo-0.0.1-SNAPSHOT.jar的跟路径，就可以访问
+
+=========================================================================
+CLASSPATH
+.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+
+JAVA_HOME
+C:\Program Files\Java\jdk1.8.0_152
+
+Path
+.;%JAVA_HOME%\bin;
+=====================lunux==============================================
+cd 进入到当前目录
+执行命令：
+
+启动：
+./startServer.sh start
+
+查看运行状态：
+./startServer.sh status
+
+重启：
+./startServer.sh restart
+
+关闭：
+./startServer.sh restart
+
+=====================windows==============================================
+
+cmd 进入当前目录
+输入命令：
+java -jar demo-0.0.1-SNAPSHOT.jar --server.port=888
